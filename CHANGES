@@ -1,0 +1,33 @@
+Changelog for Dancer-Logger-ConsoleAggregator
+
+v0.000 2012-03-20T02:32:54
+ [Khaled Hussein - KnightHacker <khaled.hussein@gmail.com>]
+ - Merge pull request #1 from throughnothing/master
+   
+   Dzil
+
+
+ [KnightHacker <khaled.hussein@gmail.com>]
+ - Removes implicit dereferencing :).
+
+ - Cleans my 'use' packages;
+
+ - Registers an 'after' hook.
+   
+   That way the app developer doesn't need to explicitly add an after hook
+   to their
+   app.
+
+ - Fixes a bug: log messages not reset after printed.
+
+ - Initial Commit
+
+
+ [William Wolf <throughnothing@gmail.com>]
+ - get rid of Exporter stuff
+
+ - fix newline issue
+
+ - Add Dzil stuff for cpan.
+
+
