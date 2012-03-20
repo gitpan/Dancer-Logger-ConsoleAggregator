@@ -22,12 +22,14 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Dancer::Hook" => 0,
     "Dancer::Logger::Abstract" => 0,
+    "DateTime" => 0,
     "JSON" => 0,
+    "Try::Tiny" => 0,
     "base" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => ""
   }

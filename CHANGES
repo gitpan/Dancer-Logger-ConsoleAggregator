@@ -1,6 +1,22 @@
 Changelog for Dancer-Logger-ConsoleAggregator
 
-v0.000 2012-03-20T02:32:54
+0.002 2012-03-20T20:43:55
+ [Khaled Hussein - KnightHacker <khaled.hussein@gmail.com>]
+ - Merge pull request #2 from throughnothing/json
+   
+   Adds capability to log to a specific key. This is helpful for indexing
+   logs.
+
+
+ [KnightHacker <khaled.hussein@gmail.com>]
+ - Adds more documentation.
+
+
+ [William Wolf <throughnothing@gmail.com>]
+ - Make all request data a nicely formatted json object.
+
+
+v0.001 2012-03-20T02:32:54
  [Khaled Hussein - KnightHacker <khaled.hussein@gmail.com>]
  - Merge pull request #1 from throughnothing/master
    
