@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Dancer::Logger::ConsoleAggregator;
 {
-  $Dancer::Logger::ConsoleAggregator::VERSION = '0.002';
+  $Dancer::Logger::ConsoleAggregator::VERSION = '0.003';
 }
 use Dancer::Hook;
 use DateTime;
@@ -33,7 +33,7 @@ sub _log {
 }
 
 sub flush {
-    if( @$strings > 0 && scalar( keys %$log_message ) > 0){
+    if( @$strings > 0 || scalar( keys %$log_message ) > 0){
         $log_message->{timestamp} = DateTime->now . 'Z';
         $log_message->{messages} = $strings;
         print STDERR to_json($log_message) ."\n";
@@ -57,7 +57,7 @@ Dancer::Logger::ConsoleAggregator - Dancer Console Logger that aggregates each r
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

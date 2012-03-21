@@ -1,6 +1,28 @@
 Changelog for Dancer-Logger-ConsoleAggregator
 
-0.002 2012-03-20T20:43:55
+0.003 2012-03-21T03:00:50
+ [Khaled Hussein - KnightHacker <khaled.hussein@gmail.com>]
+ - Merge pull request #3 from throughnothing/master
+   
+   Fix issue when debugging strings only.
+
+
+ [KnightHacker <khaled.hussein@gmail.com>]
+ - Merge branch 'master' of
+   github.com:khussein/Dancer-Logger-ConsoleAggregator
+   
+   * 'master' of github.com:khussein/Dancer-Logger-ConsoleAggregator:
+     Fix issue with logging strings only.
+
+
+ [William Wolf <throughnothing@gmail.com>]
+ - Fix issue with logging strings only.
+   
+   If no perl objects or json objects were logged, but
+   only strings, then it would fail to output anything.
+
+
+v0.002 2012-03-20T20:47:56
  [Khaled Hussein - KnightHacker <khaled.hussein@gmail.com>]
  - Merge pull request #2 from throughnothing/json
    
@@ -9,6 +31,8 @@ Changelog for Dancer-Logger-ConsoleAggregator
 
 
  [KnightHacker <khaled.hussein@gmail.com>]
+ - Readme changes
+
  - Adds more documentation.
 
 
