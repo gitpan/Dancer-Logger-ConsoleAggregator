@@ -25,4 +25,4 @@ requires:
 resources:
   bugtracker: https://github.com/khussein/Dancer-Logger-ConsoleAggregator/issues
   repository: git://github.com/khussein/Dancer-Logger-ConsoleAggregator.git
-version: 0.003
+version: 0.004

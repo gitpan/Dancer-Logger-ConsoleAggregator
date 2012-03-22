@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Dancer::Logger::ConsoleAggregator;
 {
-  $Dancer::Logger::ConsoleAggregator::VERSION = '0.003';
+  $Dancer::Logger::ConsoleAggregator::VERSION = '0.004';
 }
 use Dancer::Hook;
 use DateTime;
@@ -21,14 +21,16 @@ sub _log {
     my ($self, $level, $message, $obj) = @_;
     try {
         # If its a perl object stringified
-        $obj = eval $message;
-    } catch {
+        $ev_res = eval $message;
+        $obj = ref $ev_res ? $ev_res : undef;
+    };
+    try {
         # If its json stringified
         $obj = from_json($message);
-    };
+    } if !$obj;
+
     # If its just a string
     push( @$strings, $message ) if( !$obj );
-
     map { $log_message->{$_} = $obj->{$_} } keys %$obj if $obj;
 }
 
@@ -57,7 +59,7 @@ Dancer::Logger::ConsoleAggregator - Dancer Console Logger that aggregates each r
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 

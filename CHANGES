@@ -1,13 +1,19 @@
 Changelog for Dancer-Logger-ConsoleAggregator
 
-0.003 2012-03-21T03:00:50
+v0.003 2012-03-22T11:35:44
  [Khaled Hussein - KnightHacker <khaled.hussein@gmail.com>]
+ - Merge pull request #4 from throughnothing/master
+   
+   Fixes a bug with debugging strings
+
  - Merge pull request #3 from throughnothing/master
    
    Fix issue when debugging strings only.
 
 
  [KnightHacker <khaled.hussein@gmail.com>]
+ - Upping the version
+
  - Merge branch 'master' of
    github.com:khussein/Dancer-Logger-ConsoleAggregator
    
@@ -16,6 +22,11 @@ Changelog for Dancer-Logger-ConsoleAggregator
 
 
  [William Wolf <throughnothing@gmail.com>]
+ - Fix issue with eval on scalars.
+   
+   This fix an issue where strings were being used as
+   objects rather than being appended to messages.
+
  - Fix issue with logging strings only.
    
    If no perl objects or json objects were logged, but
